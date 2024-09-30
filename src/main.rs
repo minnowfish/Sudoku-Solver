@@ -17,8 +17,8 @@ impl Sudoku {
         }
 
         // check 3x3 box
-        let start_row = row / 3 * 3;
-        let start_col = col / 3 * 3;
+        let start_row = (row / 3) * 3;
+        let start_col = (col / 3) * 3;
         for i in 0..3 {
             for j in 0..3 {
                 if self.grid[start_row + i][start_col + j] == num {
